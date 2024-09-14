@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT Auth Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h2>Admin Interface</h2>
+        <div>
+            <h3>Register</h3>
+            <input type="text" id="reg-username" placeholder="Username">
+            <input type="password" id="reg-password" placeholder="Password">
+            <button onclick="register()">Register</button>
+        </div>
+
+        <div>
+            <h3>Login</h3>
+            <input type="text" id="login-username" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div>
+            <h3>Token</h3>
+            <textarea id="token" readonly></textarea>
+            <button onclick="copyToken()">Copy Token</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
